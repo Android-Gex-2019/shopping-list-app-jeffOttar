@@ -1,4 +1,4 @@
-package ca.nbcc.shoppinglist;
+package com.nbcc.jeffottar.assignment1jeff;
 
 import org.junit.Test;
 

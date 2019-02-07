@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Shopping List</string>
+    <string name="app_name">Assignment1Jeff</string>
+    <string name="ShoppingListActivityLabel">Shopping List Items</string>
+    <string name="rice_label">Rice</string>
+    <string name="tomato_label">Tomato</string>
+    <string name="yogurt_label">Yogurt</string>
+    <string name="oatmeal_label">Oatmeal</string>
+    <string name="bacon_label">Bacon</string>
+    <string name="milk_label">Milk</string>
+    <string name="bread_label">Bread</string>
+    <string name="tofu_label">Tofu</string>
+    <string name="hamburger_label">Hamburger</string>
+    <string name="pork_label">Pork</string>
+    <string name="add_item_label">Add Item</string>
 </resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingActivity">
+
+    <Button
+        android:id="@+id/rice_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rice_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pork_button"
+        app:layout_constraintTop_toBottomOf="@+id/tomato_button"
+        android:tag="@string/rice_label"
+        android:onClick="buyItem" />
+
+    <Button
+        android:id="@+id/pork_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pork_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rice_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hamburger_button"
+        android:tag="@string/pork_label"
+        android:onClick="buyItem"/>
+
+    <Button
+        android:id="@+id/bacon_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bacon_label"
+        app:layout_constraintBottom_toTopOf="@+id/tomato_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yogurt_button"
+        app:layout_constraintTop_toBottomOf="@+id/oatmeal_button"
+        app:layout_constraintVertical_bias="0.453"
+        android:tag="@string/bacon_label"
+        android:onClick="buyItem"/>
+
+    <Button
+        android:id="@+id/tomato_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tomato_label"
+        app:layout_constraintBottom_toTopOf="@+id/rice_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hamburger_button"
+        app:layout_constraintTop_toBottomOf="@+id/bacon_button"
+        android:tag="@string/tomato_label"
+        android:onClick="buyItem"/>
+
+    <Button
+        android:id="@+id/hamburger_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hamburger_label"
+        app:layout_constraintBottom_toTopOf="@+id/pork_button"
+        app:layout_constraintEnd_toStartOf="@+id/tomato_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yogurt_button"
+        android:tag="@string/hamburger_label"
+        android:onClick="buyItem"/>
+
+    <Button
+        android:id="@+id/yogurt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yogurt_label"
+        app:layout_constraintBottom_toTopOf="@+id/hamburger_button"
+        app:layout_constraintEnd_toStartOf="@+id/bacon_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tofu_button"
+        app:layout_constraintVertical_bias="0.453"
+        android:tag="@string/yogurt_label"
+        android:onClick="buyItem" />
+
+    <Button
+        android:id="@+id/bread_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bread_label"
+        app:layout_constraintBottom_toTopOf="@+id/tofu_button"
+        app:layout_constraintEnd_toStartOf="@+id/milk_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="@string/bread_label"
+        android:onClick="buyItem"/>
+
+    <Button
+        android:id="@+id/milk_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/milk_label"
+        app:layout_constraintBottom_toTopOf="@+id/oatmeal_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bread_button"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="@string/milk_label"
+        android:onClick="buyItem"/>
+
+    <Button
+        android:id="@+id/oatmeal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oatmeal_label"
+        app:layout_constraintBottom_toTopOf="@+id/bacon_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tofu_button"
+        app:layout_constraintTop_toBottomOf="@+id/milk_button"
+        android:tag="@string/oatmeal_label"
+        android:onClick="buyItem"/>
+
+    <Button
+        android:id="@+id/tofu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tofu_label"
+        app:layout_constraintBottom_toTopOf="@+id/yogurt_button"
+        app:layout_constraintEnd_toStartOf="@+id/oatmeal_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bread_button"
+        android:tag="@string/tofu_label"
+        android:onClick="buyItem"/>
+</android.support.constraint.ConstraintLayout>
