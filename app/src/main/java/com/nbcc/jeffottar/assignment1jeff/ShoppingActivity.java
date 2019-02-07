@@ -56,17 +56,16 @@ public class ShoppingActivity extends AppCompatActivity {
     }
 
     /**
-     * Navigate Up to Parent Activity
+     * Marco's solution to saving state on this side
      * @param item
      * @return
      */
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            // Respond to the action bar's Up/Home button
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
+        if (item.getItemId()== android.R.id.home) {
+            Intent intent = NavUtils.getParentActivityIntent(this);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            NavUtils.navigateUpTo(this, intent);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

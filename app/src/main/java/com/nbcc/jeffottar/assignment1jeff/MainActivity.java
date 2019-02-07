@@ -65,8 +65,6 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
             //delete text views
             list=(ShoppingList)savedInstanceState.getSerializable("list");
-            LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout);
-            layout.removeAllViews();
             populateLayout();
         }
     }
@@ -105,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
      * populate the linear layout with the textview holding the values
      */
     private void populateLayout() {
+        LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout);
+        layout.removeAllViews();
         Map<String, Integer> cart =list.getItems();
         String[] keys = cart.keySet().toArray(new String[cart.size()]);
         for(int i =0; i < cart.size(); i++)
@@ -121,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
                 text.setTextSize(TypedValue.COMPLEX_UNIT_SP,20);
             }
 
-            LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout);
             layout.addView(text);
         }
     }
